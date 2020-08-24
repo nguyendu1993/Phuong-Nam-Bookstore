@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/audiowide"
+        android:text="-LOGIN-"
+        android:textColor="#FFAA00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:background="#ffffff"
+        android:hint="Username"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_below="@+id/edtUsername"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:inputType="textPassword"
+        android:background="#ffffff"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"/>
+    <CheckBox
+        android:id="@+id/cbRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFAA00"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-7dp"
+        android:layout_below="@+id/edtPassword"
+       android:layout_alignLeft="@id/edtPassword"
+        android:text="Remember me "/>
+    <TextView
+        android:id="@+id/tvFogot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:textColor="#FFAA00"
+        android:layout_alignRight="@+id/edtPassword"
+        android:layout_marginTop="27dp"
+        android:text="Foget Password ?"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cbRemember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFAA00"
+        android:fontFamily="@font/bungee"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tvRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFAA00"
+        android:text="You don't have Account ?, Click here to Register"/>
+
+
+</RelativeLayout>

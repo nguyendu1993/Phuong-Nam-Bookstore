@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:background="#FFAA00"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/audiowide"
+        android:text="ADD BILL"/>
+    <EditText
+        android:id="@+id/edtmahoadon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Hóa Đơn"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tvngaytao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#FFAA00"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/calendar"
+        android:hint="Chọn Ngày"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogAddBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#FFAA00"
+            android:fontFamily="@font/bungee"
+            android:layout_weight="1"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/btnDialogAddBillCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#FFAA00"
+            android:fontFamily="@font/bungee"
+            android:layout_weight="1"
+            android:text="CANCEL" />
+    </LinearLayout>
+
+
+</LinearLayout>

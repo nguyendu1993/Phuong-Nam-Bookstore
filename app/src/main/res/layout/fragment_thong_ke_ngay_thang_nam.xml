@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ThongKeNgayThangNam">
+
+    <TextView
+        android:id="@+id/tvtktop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#FFAA00"
+        android:fontFamily="@font/audiowide"
+        android:text="DATE"/>
+    <TextView
+        android:id="@+id/tvthongkengay"
+        android:layout_width="300dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvtktop"
+        android:hint="200000 VND"
+        android:textAlignment="center"
+        android:textColor="#FFAA00"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvtk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#00CD00"
+        android:fontFamily="@font/audiowide"
+        android:layout_below="@+id/tvthongkengay"
+        android:layout_marginTop="20dp"
+        android:text="MONTH"/>
+    <TextView
+        android:id="@+id/tvthongkethang"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#00CD00"
+        android:layout_marginTop="20dp"
+        android:hint="3000000 VND"
+        android:textSize="25dp"
+        android:layout_below="@+id/tvtk"/>
+
+    <TextView
+        android:id="@+id/tvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="#E40000"
+        android:fontFamily="@font/audiowide"
+        android:textAlignment="center"
+        android:text="YEAR"
+        android:layout_below="@+id/tvthongkethang"/>
+
+    <TextView
+        android:id="@+id/tvthongkenam"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#E40000"
+        android:layout_marginTop="20dp"
+        android:hint="5000000 VND"
+        android:textSize="25dp"
+        android:layout_below="@+id/tvt"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

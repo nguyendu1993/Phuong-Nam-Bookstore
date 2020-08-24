@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tvtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DETAIL BOOK"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFAA00"
+        android:fontFamily="@font/audiowide"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/imvshowbook"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvtop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/tvdetailmasach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imvshowbook"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvdetailtensach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdetailmasach"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvdetailloaisach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdetailtensach"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvdetailgiasach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdetailloaisach"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvdetailslsach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdetailgiasach"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvdetailbaove"
+        android:layout_below="@+id/tvdetailslsach"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvdetailbaove">
+
+        <Button
+            android:id="@+id/btnEditSach"
+            android:layout_width="wrap_content"
+            android:background="#FFAA00"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/bungee"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EDIT" />
+
+        <Button
+            android:id="@+id/btnDeleteSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFAA00"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/bungee"
+            android:layout_weight="1"
+            android:text="DELETE" />
+    </LinearLayout>
+
+</RelativeLayout>

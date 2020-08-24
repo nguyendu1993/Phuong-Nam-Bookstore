@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imvuser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_category"/>
+    <TextView
+        android:id="@+id/tvmaloai"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/imvuser"
+        android:layout_marginTop="2dp"
+        android:textColor="#FFAA00"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/tvtenloai"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/imvuser"
+        android:layout_below="@+id/tvmaloai"
+        android:layout_height="25dp"/>
+
+</RelativeLayout>

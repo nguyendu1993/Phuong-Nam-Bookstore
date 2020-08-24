@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Top10">
+
+    <EditText
+        android:id="@+id/edtserach"
+        android:layout_width="350dp"
+        android:textSize="25dp"
+        android:hint="Nhập tháng cần tìm"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/btnsearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:src="@drawable/search"
+        android:layout_toRightOf="@+id/edtserach"/>
+
+    <ListView
+        android:id="@+id/tktop10"
+        android:layout_below="@+id/edtserach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

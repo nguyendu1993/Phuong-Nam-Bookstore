@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD CATEGORY"
+        android:background="#FFAA00"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/bungee"
+        android:textColor="#ffffff"
+        />
+    <EditText
+        android:id="@+id/edtaddmaloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Mã Loại Sách"
+        android:layout_below="@+id/tvtop"
+        />
+    <EditText
+        android:id="@+id/edtaddtenloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Tên Loại Sách"
+        android:layout_below="@+id/edtaddmaloai"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/edtaddtenloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnaddloai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFAA00"
+            android:fontFamily="@font/audiowide"
+            android:textColor="#ffffff"
+            android:text="THÊM" />
+
+        <Button
+            android:id="@+id/btncancelloai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFAA00"
+            android:fontFamily="@font/audiowide"
+            android:textColor="#ffffff"
+            android:text="HỦY" />
+    </LinearLayout>
+
+
+</RelativeLayout>

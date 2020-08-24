@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imvicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconbill"/>
+    <TextView
+        android:id="@+id/tvmahoadon"
+        android:layout_width="match_parent"
+        android:textColor="#FFAA00"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imvicon"/>
+    <TextView
+        android:id="@+id/tvngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/imvicon"
+        android:textColor="#E40000"
+        android:layout_below="@+id/tvmahoadon"/>
+
+
+</RelativeLayout>

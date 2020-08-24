@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBook">
+    <TextView
+        android:id="@+id/edteditmasach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imveditchup"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mã Sách" />
+
+    <EditText
+        android:id="@+id/edtedittensach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edteditmasach"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Tên Sách" />
+
+    <EditText
+        android:id="@+id/edteditgiasach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speditloaisach"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Giá Sách" />
+
+    <EditText
+        android:id="@+id/edteditsoluongsach"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edteditgiasach"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Số Lượng" />
+
+    <EditText
+        android:id="@+id/edteditbaove"
+        android:layout_below="@+id/edteditsoluongsach"
+        android:layout_centerHorizontal="true"
+        android:hint="Bao Ve"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imvEDITHinh"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tvthemsach1"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/imveditchoose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvthemsach1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/imvEDITHinh"
+        android:src="@drawable/gallery" />
+
+    <ImageView
+        android:id="@+id/imveditchup"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imveditchoose"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/imvEDITHinh"
+        android:src="@drawable/camera" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edteditbaove"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEditSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFAA00"
+            android:fontFamily="@font/bungee"
+            android:onClick="Edit"
+            android:text="EDIT"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnHuyEditSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFAA00"
+            android:fontFamily="@font/bungee"
+            android:text="CANCEL"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/speditloaisach"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edtedittensach"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvthemsach1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/audiowide"
+        android:text="EDIT BOOK"
+        android:textAlignment="center"
+        android:textColor="#FFAA00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

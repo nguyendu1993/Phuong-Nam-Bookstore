@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imvPicture"
+        android:layout_margin="5dp"
+        android:layout_width="120dp"
+        android:layout_height="170dp"/>
+    <TextView
+        android:id="@+id/tvMaSach"
+        android:layout_toRightOf="@+id/imvPicture"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvTenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMaSach"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textColor="#FFAA00"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/imvPicture"/>
+    <TextView
+        android:id="@+id/tvGiaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvTenSach"
+        android:textSize="25dp"
+        android:textColor="#EB0000"
+        android:layout_toRightOf="@+id/imvPicture"/>
+    <TextView
+        android:id="@+id/tvbaove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imvPicture"
+        android:layout_below="@+id/tvGiaSach"
+        android:hint="Bao Ve"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"/>
+
+
+</RelativeLayout>

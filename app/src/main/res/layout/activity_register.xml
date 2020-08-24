@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/audiowide"
+        android:text="-REGISTER-"
+        android:textColor="#FFAA00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtResUsername"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:background="#ffffff"
+        android:hint="Username"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/edtResPassword"
+        android:layout_below="@+id/edtResUsername"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:background="#ffffff"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/edtReEnterPass"
+        android:layout_below="@+id/edtResPassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:inputType="textPassword"
+        android:background="#ffffff"
+        android:hint="Confirm Password"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnRegis"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtReEnterPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFAA00"
+        android:fontFamily="@font/bungee"
+        android:text="REGISTER"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/btnReCancel"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnRegis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFAA00"
+        android:fontFamily="@font/bungee"
+        android:text="CANCEL"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
